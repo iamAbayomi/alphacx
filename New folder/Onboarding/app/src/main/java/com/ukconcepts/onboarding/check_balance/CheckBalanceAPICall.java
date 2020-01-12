@@ -132,7 +132,6 @@ public class CheckBalanceAPICall  extends AsyncTask<Void,Void, ArrayList<Account
            CheckBalanceFragment.accountStatementModelArrayList = accountStatementModelArrayList;
 
           // CheckBalanceFragment.accountStatementModelArrayList.
-
         }
 
     }
