@@ -1,0 +1,126 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m" >true</item>
+
+    </style>
+
+
+
+    <style name="Background" parent="AppTheme">
+
+    </style>
+
+
+    <style name="noTitleBarTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name ="colorPrimaryDark">#FFFFFF</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+
+    <style name="RedButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#EC0E0E</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_marginRight">22dp</item>
+        <item name="android:layout_marginLeft">22dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">#0C313030</item>
+        <item name="android:layout_marginStart">@dimen/marginSide</item>
+        <item name="android:layout_marginEnd">@dimen/marginSide</item>
+
+    </style>
+
+
+    <style name="HeaderTextView" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:layout_marginStart">0dp</item>
+    </style>
+
+    <style name="SmallTextView" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+
+        <item name="android:layout_marginStart">@dimen/marginSide</item>
+    </style>
+
+    <style name="RecyclerTextView" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_margin">18sp</item>
+        <item name="android:layout_marginStart">@dimen/marginSide</item>
+    </style>
+
+
+
+
+    <style name="SmallEditView" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">#0C313030</item>
+        <item name="android:layout_marginStart">@dimen/marginSide</item>
+        <item name="android:layout_marginEnd">@dimen/marginSide</item>
+    </style>
+
+
+    <style name="PinkTextView" parent="SmallTextView">
+        <item name="android:textColor">@color/LightPink</item>
+        <item name="android:layout_marginTop">@dimen/marginSide</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="PinkEditTextView" parent="SmallEditView">
+        <item name="android:background">@color/LighterPink</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/marginSide</item>
+    </style>
+
+    <style name="CardView" parent="Base.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:height">333dp</item>
+        <item name="android:background">@color/LighterPink</item>
+        <item name="android:layout_marginStart">@dimen/marginSide</item>
+        <item name="android:layout_marginEnd">@dimen/marginSide</item>
+
+    </style>
+
+
+
+
+
+    <style name="AppToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+    </style>
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">#E5E5E5</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/profile">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.ukconcepts.onboarding.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/check_balance"
+        android:name="com.ukconcepts.onboarding.check_balance.CheckBalanceFragment"
+        android:label="@string/menu_check_balance"
+        tools:layout="@layout/fragment_check_balance" />
+
+    <fragment
+        android:id="@+id/quit"
+        android:name="com.ukconcepts.onboarding.ui.quit.QuitFragment"
+        android:label="@string/menu_quit"
+        tools:layout="@layout/fragment_quit" />
+
+</navigation>

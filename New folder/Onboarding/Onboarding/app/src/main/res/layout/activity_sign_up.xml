@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_margin="22dp"
+            android:layout_gravity="center"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/RegisterTextView"
+                    style="@style/HeaderTextView"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:text="SignUp"
+                    android:gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+                <TextView
+                    android:id="@+id/fullnameTextView"
+                    style="@style/SmallTextView"
+                    android:layout_marginStart="@dimen/marginSide"
+                    android:layout_marginTop="22dp"
+                    android:text="Full Name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/RegisterTextView" />
+
+
+                <EditText
+                    android:id="@+id/fullnameEditText"
+                    style="@style/SmallEditView"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:layout_marginEnd="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/fullnameTextView" />
+
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    style="@style/SmallTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="Email"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/fullnameEditText"
+                    tools:layout_editor_absoluteX="22dp"
+                    tools:layout_editor_absoluteY="264dp" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    style="@style/CustomEditText"
+                    android:layout_marginTop="@dimen/marginTop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/emailTextView"
+                    tools:layout_editor_absoluteY="343dp" />
+
+
+                <TextView
+                    android:id="@+id/dobTextView"
+                    style="@style/SmallTextView"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:text="Date of Birth"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/emailEditText"
+                    tools:layout_editor_absoluteX="22dp"
+                    tools:layout_editor_absoluteY="417dp" />
+
+                <EditText
+                    android:id="@+id/dobEditText"
+                    style="@style/CustomEditText"
+
+                    android:layout_marginTop="@dimen/marginTop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.522"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/dobTextView"
+                    tools:layout_editor_absoluteY="472dp" />
+
+                <TextView
+                    android:id="@+id/phoneNumberTextView"
+                    style="@style/SmallTextView"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:text="Password"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/dobEditText"
+                    tools:layout_editor_absoluteX="22dp"
+                    tools:layout_editor_absoluteY="548dp" />
+
+                <EditText
+                    android:id="@+id/phoneNumberEditText"
+                    style="@style/CustomEditText"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:inputType="textPassword"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/phoneNumberTextView"
+                    tools:layout_editor_absoluteY="602dp" />
+
+
+                <Button
+                    android:id="@+id/registerButton"
+                    style="@style/RedButton"
+                    android:layout_marginTop="34dp"
+                    android:text="REGISTER"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.636"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/phoneNumberEditText"
+                    tools:layout_editor_absoluteY="712dp" />
+
+                <TextView
+                    android:id="@+id/forgotPasswordText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Forgot your password. Click here. "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/registerButton" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="34dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="By Signing Up you agree to our terms and conditions "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/forgotPasswordText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
